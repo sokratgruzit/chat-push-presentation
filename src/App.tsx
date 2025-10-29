@@ -39,55 +39,56 @@ export default function App() {
   ];
 
   return (
-    <div ref={previewRef} className={styles.root}>
-      {/* Превью зона */}
-      <div className={styles.cardsContainer}>
-        {/* Декор */}
-        <div className={styles.decorativeYellow}></div>
-        <div className={styles.decorativeGreen}></div>
-        <div className={styles.decorativeBlueLarge}></div>
+    <>
+      <div ref={previewRef} className={styles.root}>
+        {/* Превью зона */}
+        <div className={styles.cardsContainer}>
+          {/* Декор */}
+          <div className={styles.decorativeYellow}></div>
+          <div className={styles.decorativeGreen}></div>
+          <div className={styles.decorativeBlueLarge}></div>
 
-        <img src="/img/letter.png" alt="letter" className={styles.letter} />
-        <img src="/img/whatsapp.png" alt="whatsapp" className={styles.whatsapp} />
-        <img src="/img/heart.png" alt="heart" className={styles.heart} />
-        <img src="/img/telegram.png" alt="telegram" className={styles.telegram} />
-        <img src="/img/bubble-dots.png" alt="bubble" className={styles.bubble} />
+          <img src="/img/letter.png" alt="letter" className={styles.letter} />
+          <img src="/img/whatsapp.png" alt="whatsapp" className={styles.whatsapp} />
+          <img src="/img/heart.png" alt="heart" className={styles.heart} />
+          <img src="/img/telegram.png" alt="telegram" className={styles.telegram} />
+          <img src="/img/bubble-dots.png" alt="bubble" className={styles.bubble} />
 
-        <PricingCard
-          id="standard"
-          title="Тариф 'Стандарт'"
-          price="999 руб./мес"
-          features={standardFeatures}
-          bgColor="#fae6c2ff"
-          textColor="#1f2937"
-        />
-        <PricingCard
-          id="super"
-          title="Тариф 'СУПЕР'🔥"
-          subtitle="Опции тарифов 'Стандарт' + 'Макс'"
-          price="2490 руб./мес"
-          features={superFeatures}
-          bgColor="#fe9246ff"
-          textColor="#1f2937"
-          badge="самый выгодный"
-          isPopular={true}
-        />
-        <PricingCard
-          id="max"
-          title="Тариф 'Макс'💥"
-          subtitle="Опции тарифа 'Стандарт'"
-          price="1749 руб./мес"
-          features={maxFeatures}
-          bgColor="#8bb9f2ff"
-          textColor="#1f2937"
-        />
+          <PricingCard
+            id="standard"
+            title="Тариф 'Стандарт'"
+            price="999 руб./мес"
+            features={standardFeatures}
+            bgColor="#fae6c2ff"
+            textColor="#1f2937"
+          />
+          <PricingCard
+            id="super"
+            title="Тариф 'СУПЕР'🔥"
+            subtitle="Опции тарифов 'Стандарт' + 'Макс'"
+            price="2490 руб./мес"
+            features={superFeatures}
+            bgColor="#fe9246ff"
+            textColor="#1f2937"
+            badge="самый выгодный"
+            isPopular={true}
+          />
+          <PricingCard
+            id="max"
+            title="Тариф 'Макс'💥"
+            subtitle="Опции тарифа 'Стандарт'"
+            price="1749 руб./мес"
+            features={maxFeatures}
+            bgColor="#8bb9f2ff"
+            textColor="#1f2937"
+          />
+        </div>
       </div>
-
       <div className={styles.downloadWrapper}>
         <button className={styles.downloadBtn} onClick={downloadJPEG}>
           Скачать JPEG
         </button>
       </div>
-    </div>
+    </>
   );
 }
