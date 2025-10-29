@@ -1,0 +1,158 @@
+.card {
+    border-radius: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 350px;
+    transition: transform 0.3s;
+    border: 3px solid black;
+}
+
+/* Для центральной карточки */
+.card.popularCard {
+    transform: scale(1.2) !important;
+    z-index: 10;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-top: auto;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.featureBullet {
+  color: #1f2937;
+  font-weight: bold;
+}
+
+.featureText {
+  font-size: 0.875rem;
+}
+
+.badge {
+    position: absolute;
+    bottom: 40px;
+    left: -48px;
+    background-color: #facc15;
+    color: black;
+    padding: 0.25rem 3rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    transform: rotate(45deg);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.popular {
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ef4444;
+  color: white;
+  padding: .8rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border-radius: 9999px;
+}
+
+.editableField {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.inputField {
+  width: 100%;
+  font-size: inherit;
+  font-weight: inherit;
+  border: none;
+  background: transparent;
+  color: inherit;
+}
+
+.inputField:focus {
+  outline: 1px solid #3b82f6;
+  border-radius: 0.25rem;
+}
+
+.checkIcon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #22c55e;
+    cursor: pointer;
+    background: white;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.checkIcon2 {
+    position: absolute;
+    right: 115px;
+    top: -47px;
+    transform: rotate(-47deg);
+    color: #22c55e;
+    cursor: pointer;
+    background: white;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+input {
+    border: 2px solid black;
+    outline: none;
+    padding: 5px;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.coin {
+    width: 70px;
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    z-index: 100;
+}
+
+.badgeWrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}

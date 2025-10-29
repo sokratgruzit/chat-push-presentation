@@ -1,0 +1,137 @@
+.root {
+  background: linear-gradient(135deg, #fef3c7 0%, #ffeedd 50%, #dbeafe 100%);
+  position: relative;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+/* Декор */
+.decorativeYellow {
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: #fcd34d;
+  border-radius: 50%;
+  opacity: 0.6;
+  filter: blur(0.25rem);
+}
+
+.decorativeGreen {
+  position: absolute;
+  top: 5rem;
+  right: 8rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: #84cc16;
+  border-radius: 50%;
+  opacity: 0.6;
+  filter: blur(0.25rem);
+}
+
+.decorativeBlueLarge {
+  position: absolute;
+  top: 1rem;
+  left: 25%;
+  width: 6rem;
+  height: 6rem;
+  background-color: #fef08a;
+  border-radius: 50%;
+  opacity: 0.7;
+  filter: blur(0.5rem);
+}
+
+/* Иконки */
+.iconWrapper {
+  position: absolute;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconRotateNeg { transform: rotate(-12deg); }
+.iconRotatePos { transform: rotate(12deg); }
+
+.iconColorWhite { color: white; }
+.iconColorOrange { color: #f97316; }
+
+/* Контейнер карточек */
+.cardsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1280px;
+  margin: 6rem auto 4rem auto;
+  padding: 4rem 1rem;
+}
+
+@media screen and (min-width: 1180px) {
+  .cardsContainer { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Кнопка скачать */
+.downloadWrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10000;
+}
+
+.downloadBtn {
+  padding: 0.75rem 2rem;
+  border-radius: 1rem;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.downloadBtn:hover {
+  background-color: #2563eb;
+}
+
+.letter {
+    width: 126px;
+    position: absolute;
+    bottom: 27px;
+    left: 0;
+    z-index: 100;
+}
+
+.whatsapp {
+    width: 70px;
+    position: absolute;
+    top: 20px;
+    left: 20%;
+    z-index: 100;
+}
+
+.heart {
+    width: 130px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+.bubble {
+    width: 100px;
+    position: absolute;
+    bottom: 20%;
+    right: -10px;
+    z-index: 100;
+}
+
+.telegram {
+    width: 180px;
+    position: absolute;
+    top: 20px;
+    right: 10%;
+    z-index: 100;
+}
