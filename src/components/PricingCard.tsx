@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { EditCardModal } from './ui/modals/EditCardModal';
+import { EditCardModal } from './UI/modals/EditCardModal';
 
 import styles from './PricingCard.module.css';
 
