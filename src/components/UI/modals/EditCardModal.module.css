@@ -1,0 +1,91 @@
+.modalWrap {
+    position: fixed;
+    background: white;
+    width: 500px;
+    height: 500px;
+    left: calc(50% - 250px);
+    top: calc(50% - 250px);
+    animation: fadeInUp 0.25s ease-out forwards;
+    z-index: 9000;
+    padding: 40px 10px 10px 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+}
+
+.label {
+    color: #000;
+    font-size: .8rem;
+}
+
+.inputsWrap {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow-y: auto;
+}
+
+.layout {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    z-index: 8000;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #000;
+    cursor: pointer;
+    background: white;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    border: 3px solid #000;
+    transition: .5s;
+}
+
+.close:hover {
+    transform: rotate(90deg);
+}
+
+.checkIcon {
+    position: absolute;
+    right: 60px;
+    top: 10px;
+    color: #22c55e;
+    cursor: pointer;
+    background: white;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    border: 3px solid #22c55e;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .modalWrap {
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        left: 10px;
+        top: 10px;
+    }
+}
