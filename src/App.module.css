@@ -2,7 +2,8 @@
   background: linear-gradient(135deg, #fef3c7 0%, #ffeedd 50%, #dbeafe 100%);
   position: relative;
   padding: 2rem;
-  overflow: hidden;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 /* Декор */
@@ -42,23 +43,6 @@
   filter: blur(0.5rem);
 }
 
-/* Иконки */
-.iconWrapper {
-  position: absolute;
-  padding: 1rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.iconRotateNeg { transform: rotate(-12deg); }
-.iconRotatePos { transform: rotate(12deg); }
-
-.iconColorWhite { color: white; }
-.iconColorOrange { color: #f97316; }
-
 /* Контейнер карточек */
 .cardsContainer {
   display: grid;
@@ -70,7 +54,15 @@
 }
 
 @media screen and (min-width: 1180px) {
-  .cardsContainer { grid-template-columns: repeat(3, 1fr); }
+    .cardsContainer { 
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .root {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* Кнопка скачать */
